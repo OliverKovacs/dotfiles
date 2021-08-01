@@ -141,4 +141,6 @@ export PATH=$VULKAN_SDK/bin:$PATH
 export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
 export VK_LAYER_PATH=$VULKAN_SDK/etc/vulkan/explicit_layer.d
 
+export MPD_HOST=$HOME/.config/mpd/socket
+
 eval "$(oh-my-posh --init --shell bash --config ~/poshthemes/posh-theme.omp.json)"
