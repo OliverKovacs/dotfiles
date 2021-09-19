@@ -15,3 +15,6 @@ visualizer_in_stereo = "yes"
 visualizer_type = "spectrum"
 visualizer_look = "+█"
 
+current_item_prefix = $(green)$r
+current_item_inactive_column_prefix = $(white)$r
+main_window_color = green
