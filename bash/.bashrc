@@ -136,6 +136,8 @@ ex ()
   fi
 }
 
+export PATH="$HOME/.local/bin/statusbar:$PATH"
+
 export VULKAN_SDK=~/vulkan/1.2.182.0/x86_64
 export PATH=$VULKAN_SDK/bin:$PATH
 export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
