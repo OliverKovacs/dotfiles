@@ -96,6 +96,9 @@ alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
 
+alias ll="ls -la"
+alias clearlatex="rm -f *.aux *.log *.fls *.fdb_latexmk"
+
 xhost +local:root > /dev/null 2>&1
 
 # Bash won't get SIGWINCH if another process is in the foreground.
@@ -138,11 +141,31 @@ ex ()
 
 export PATH="$HOME/.local/bin/statusbar:$PATH"
 
-export VULKAN_SDK=~/vulkan/1.2.182.0/x86_64
-export PATH=$VULKAN_SDK/bin:$PATH
-export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
-export VK_LAYER_PATH=$VULKAN_SDK/etc/vulkan/explicit_layer.d
+# export VULKAN_SDK=~/vulkan/1.2.182.0/x86_64
+# export PATH=$VULKAN_SDK/bin:$PATH
+# export LD_LIBRARY_PATH=$VULKAN_SDK/lib:$LD_LIBRARY_PATH
+# export VK_LAYER_PATH=$VULKAN_SDK/etc/vulkan/explicit_layer.d
 
 export MPD_HOST=$HOME/.config/mpd/socket
+#export MPD_HOST=127.0.0.1
 
 eval "$(oh-my-posh --init --shell bash --config ~/poshthemes/posh-theme.omp.json)"
+
+export VK_LAYER_PATH=/usr/share/vulkan/explicit_layer.d
+# export VK_INSTANCE_LAYERS=VK_LAYER_LUNARG_api_dump:VK_LAYER_KHRONOS_validation
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+. "$HOME/.cargo/env"
+
+export DENO_INSTALL="/home/oliver/.deno"
+# export PATH="$DENO_INSTALL/bin:$PATH"
+
+export RISCV="/opt/riscv"
+export PATH="$RISCV/bin:$PATH"
+
+# export PATH="$HOME/.local/apps/Rack2Free:$PATH"
+
+export FrameworkPathOverride=/etc/mono/4.5
+

@@ -1,11 +1,13 @@
 window:
     dynamic_padding: false
+    opacity: 1.0
 
 scrolling:
     multiplier: 3
 
 font:
-    family: 'Consolas NF'
+    normal:
+        family: 'Consolas NF'
 
     size: 10.6
 
@@ -47,4 +49,3 @@ colors:
         cyan:    '0x29b8db'
         white:   '0xe5e5e5'
 
-background_opacity: 1.0

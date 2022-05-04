@@ -1,0 +1,11 @@
+id = 945093770121195614
+hosts = ["localhost:6601"]
+
+[format]
+details = "$title"
+state = "$artist - $album"
+timestamp = "elapsed"
+large_image = "notes"
+large_text = "MPD"
+small_image = ""
+small_text = ""
